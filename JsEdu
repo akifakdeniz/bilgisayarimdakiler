@@ -1,9 +1,21 @@
-<html>
+<!doctype html>
+<html lang="tr-TR">
 <head>
 <title>JsEdu<title/>
 <head/>
 <body>
+<script type="text/javascript" language="javascript">
 <h4>Hello Everybody<h4/>
+var a="akifakdeniz";
+document.write(a);
+let b="Education";
+document.write(b);
+const pi=3.14;
+document.write(pi);
+
+
+
+</script>
 
 
 <body/>
