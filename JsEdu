@@ -11,7 +11,32 @@ document.write(a);
 let b="Education";
 document.write(b);
 const pi=3.14;
-document.write(pi);
+document.write(pi+"<br/>");
+
+var deger="javascript geliştiriyorum";
+var sonuc=deger.length;
+document.write("<br/>"+sonuc+"<br/>");
+
+var deger1="Yazı harfler";
+var deger2=8;
+var deger3=9090353245n;
+var deger4=true;
+
+var deger6=new Object();
+var deger7=[1,2,"üç"];
+var deger8=function(){};
+var deger9;
+var deger10=null;
+document.write(typeof(deger1)+"<br/>");
+document.write(typeof(deger2)+"<br/>");
+document.write(typeof(deger3)+"<br/>");
+document.write(typeof(deger4)+"<br/>");
+document.write(typeof(deger6)+"<br/>");
+document.write(typeof(deger7)+"<br/>");
+document.write(typeof(deger8)+"<br/>");
+document.write(typeof(deger9)+"<br/>");
+document.write(typeof(deger10)+"<br/>");
+
 
 
 
