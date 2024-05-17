@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<title>Extra Edu</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript">
+//valueOf metodu Kullanımı
+var araba=["Opel","Seat","Saab","Audi"];
+araba[4]="Togg";
+var ariba=araba.valueOf();
+document.write(ariba+"</br>"); //Opel,Seat,Saab,Audi,Togg
+
+var tarih=new Date();
+console.log(tarih); //Fri May 17 2024 07:56:52 GMT+0300 (GMT+03:00)
+console.log(tarih.valueOf()); //1715921812083
+
+
+var d1="Seyit Akif Akdeniz Computer Engineering";
+document.write(d1.indexOf("t")+"</br>"); //Metinde ilk t kaçıncı indexte
+
+document.write(d1.indexOf("t")+"</br>"); //Metinde ilk t kaçıncı indexte
+document.write(d1.indexOf("A")+"</br>"); //Metinde ilk A kaçıncı indexte
+document.write(d1.indexOf("A",6)+"</br>"); //Metinde 6 dan sonra A kaçıncı indexte
+document.write(d1.indexOf("Akd")+"</br>"); //Metinde ilk Akd kaçıncı indexte
+
+document.write(d1.lastIndexOf("e",5)+"</br>"); //Sondan 5. indexten sonraki ama burada çalışmadı!!!
+
+
+document.write(d1.search("o")+"</br>"); //Metinde o harfi kaçıncı indexte
+document.write(d1.search("put")+"</br>"); //Metinde put harfi kaçıncı indexte
+
+document.write(d1.includes("o")+"</br>"); //Metinde o harfi VAR MI?
+document.write(d1.includes("o",24)+"</br>"); //Metinde 21. karakterde o harfi VAR MI?
+document.write(d1.includes("engineering")+"</br>"); //Metinde engineering harfi VAR MI? yok çünkü e harfi küçük
+
+document.write(d1.startsWith("S")+"</br>"); //Metin S harfi ile başlıyor?TRUE
+document.write(d1.startsWith("o")+"</br></br></br>"); //Metinde o ile mi başlıyor? FALSE
+
+document.write(d1.endsWith("g")+"</br>"); //Metin g harfi ile bitti?TRUE
+document.write(d1.endsWith("o")+"</br>"); //Metinde o ile mi bitti?FALSE
+document.write(d1.endsWith("Engineering")+"</br>"); //Metin S harfi ile bitti?TRUE
+
+document.write(d1.match("Ak")+"</br>"); //Metin Ak ifadesi varsa o ifadeyi yaz?Ak
+document.write(d1.match("ot")+"</br>"); //Metinde ot ifadesi varsa yaz yoksa null de?null
+document.write(d1.endsWith("Engineering")+"</br>"); //Metin Engineerindg harfi ile bitti?TRUE
+document.write(d1.match(/ak/i)+"</br>"); //Metin küçük büyük ak ifadesi varsa o ifadeyi yaz?Ak
+document.write(d1.match(/ak/gi)+"</br>"); //Metin küçük büyük ak ifadesi varsa o ifadeyi yaz?Ak,Ak
+
+document.write(d1.replace("Seyit","Mehmeti")+"</br>"); //Metin Seyit ifadesini Mehmet ile değiştir.
+document.write(d1.replace("SEYİT","MEHMET")+"</br>"); //Metin SEYİT ifadesini Mehmet ile değiştir.Değiştirmeyecek
+document.write(d1.replace(/seyit/i,"Mehmet")+"</br>"); //Metin SEYİT ifadesini /i leyerek Mehmet ile değiştir.Değişti
+
+document.write(d1.split("")+"</br>"); //Metinde tüm harfleri dizi karakteri yapar
+document.write(d1.split("",7)+"</br>"); //Metin tüm harfleri ayrılan dizide ilk yedi dizi elemanı yaz
+document.write(d1.split(" ")+"</br></br></br>"); //Metinde boşluklar ile ayrılanları dizi yapar
+document.write(d1.split(" ",2)+"</br>"); //Metin boşluklar ile ayrılan dizide ilk iki dizi elemanı yaz
+document.write(d1.split("A")+"</br>"); //Metin harflerden A hariç dizi yap.
+
+
+document.write(d1.charAt(28)+"</br>"); //28. karakter copy-paste
+document.write(d1.charAt(29)+"</br>"); //29. karakter copy-paste
+document.write(d1.charAt(30)+"</br>"); //30. karakter copy-paste
+document.write(d1.charAt(31)+"</br>"); //31. karakter copy-paste
+document.write(d1.charAt(32)+"</br>"); //32. karakter copy-paste
+document.write(d1.charAt(33)+"</br>"); //33. karakter copy-paste
+document.write(d1.charAt(34)+"</br>"); //34. karakter copy-paste
+document.write(d1.charAt(35)+"</br>"); //35. karakter copy-paste
+
+document.write(d1.charCodeAt(28)+"</br>"); //28. karakter unicode olarak copy-paste
+document.write(d1.charCodeAt(29)+"</br>"); //29. karakter unicode olarak copy-paste
+document.write(d1.charCodeAt(30)+"</br>"); //30. karakter unicode olarak copy-paste
+document.write(d1.charCodeAt(31)+"</br>"); //31. karakter unicode olarak copy-paste
+document.write(d1.charCodeAt(32)+"</br>"); //32. karakter unicode olarak copy-paste
+document.write(d1.charCodeAt(33)+"</br>"); //33. karakter unicode olarak copy-paste
+document.write(d1.charCodeAt(34)+"</br>"); //34. karakter unicode olarak copy-paste
+document.write(d1.charCodeAt(35)+"</br>"); //35. karakter unicode olarak copy-paste
+
+
+document.write(String.fromCharCode(76,111,118,101)+"<br>"); //utf sayıssal karakteri harf olarak verir
+
+document.write(d1.toUpperCase()+"</br>"); //küçük harfleri büyütür
+
+document.write(d1.toLowerCase()+"</br>"); //küçük harfleri büyütür
+
+
+</script>
+</body>
+</html>
