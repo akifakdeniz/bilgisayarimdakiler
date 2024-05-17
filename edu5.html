@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<title>Extra Edu</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript">
+
+//degisken icerisinse her türden bilgiyi/veriyi depolamak için kullanılan alanlara verilen isimlerdir.
+//var   standart değişken tanımlamada kullanılır.
+// let  blok kapsamlı yerel değişken tanımlamada
+// sabit değişken tanımlamada kullanılır
+//
+var x="                    nasıl olacak bu iş  ";
+document.write(x.length+"</br>");
+document.write("<pre>"+x+"</br><p/re>");
+document.write("<pre>"+x.trim()+"</br><p/re>");
+document.write("<pre>"+x.trimStart()+"</br><p/re>");
+document.write("<pre>"+x.trimEnd()+"</br><p/re>");
+//slice metodu kendisine verilen parametrik değer ile karakterleri copyalama işidir.
+var x1="Seyit Akif Akdeniz "
+var x2="Computer Engineer"
+document.write(x1.slice(6)+"</br>"); //baştan 6. karakter sonrasını copy le
+document.write(x1.slice(-6)+"</br>");//sondan 6. ve sonrasını copyle
+document.write(x1.slice(4,8)+"</br>");//4. ile 8. arası karakteri copyle
+document.write(x1.substring(4,8)+"</br>");//slice ile aynı 4. ile 8. arası karakteri copyle
+document.write(x1.concat(x2)+"</br>");//kon ve kat yanına iki değişkeni birleştiriyor
+document.write(x1.repeat(10)+"</br>");//repeat metodu parametredeki değere kadar tekrarlar
+var x3=44;
+var strx3=x3.toString();
+x4=typeof x3;
+document.write(x4+"</br>");
+document.write(typeof strx3+"</br>");
+x5=1000;
+
+</script>
+</body>
+</html>
