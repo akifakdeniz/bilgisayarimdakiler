@@ -1,0 +1,46 @@
+<!doctype>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="content-type" content="text/html;charset=Utf-8"/>
+<title>Js Dersleri</title>
+
+
+
+</head>
+<body>
+<script type="text/javascript" language="javascript">
+
+document.write(new Date()+"</br>");				//Sun  May 19 2024 07:52:14 GMT+0300 (GMT+03:00) Haftanın gününü,Hangi ay ve günü yılı saati ve saat dilimi verir
+document.write(new Date(345989200000)+"</br>");//parametre milisaniyesi verilmiş ise Haftanın gününü,Hangi ay ve günü yılı saati ve saat dilimi verir
+document.write(new Date(1980,01,21)+"</br>");// parametre (yıl-ay-gün) Thu Feb 21 1980 00:00:00 GMT+0300 (GMT+03:00)
+document.write(new Date(1980,01)+"</br>");// parametre (yıl-ay) Fri Feb 01 1980 00:00:00 GMT+0300 (GMT+03:00
+document.write(new Date(1980,01,21,08,15,00)+"</br>");// parametre (yıl-ay-gün-saat-dakia-saniye) Thu Feb 21 1980 08:15:00 GMT+0300 (GMT+03:00)
+document.write(new Date(1980,01,21,08,15,00,895)+"</br></br></br>");// parametre (yıl-ay-gün-saat-dakia-saniye-salise) Thu Feb 21 1980 08:15:00 GMT+0300 (GMT+03:00)değişmedi
+
+var zaman=new Date();
+//document.write(zaman);
+document.write(zaman.getFullYear()+"</br>");//2024
+document.write(zaman.getMonth()+"</br>");//ben bu işlemi yaptığımda mayıs ayıydı ve 4 vermişti, ocak ayı 0 dan başladı gerisi anladın zaten
+document.write(zaman.getDate()+"</br>");//ben bu işlemi yaptığımda mayıs ayıydı doğru günü verdi.
+document.write(zaman.getDay()+"</br>");//ben bu işlemi yaptığımda günü bir öndeki gün olarak verdi.ilk günü olan pazarı 0 kabul ediyor dikkat edelim
+document.write(zaman.getHours()+"</br>");//saat 8 dedi
+document.write(zaman.getMinutes()+"</br>");//dakika 24 dedi
+document.write(zaman.getSeconds()+"</br>");//saniye 32 dedi
+document.write(zaman.getMilliseconds()+"</br><br>");//salise 790 dedi
+
+var zaman1=new Date();
+zaman1.setFullYear(2025);
+document.write((zaman1)+"</br>");// 2025 yıl sonra bugün günlerden ne olacak detay veriyor,Mon May 19 2025 08:34:29 GMT+0300 (GMT+03:00)
+
+document.write(zaman.getTime()+"</br>");
+document.write(zaman.setTime(1716099904439)+"</br>");
+
+document.write(Date.now()+"</br>");
+
+document.write(zaman.toLocaleString("tr-TR")+"</br>");//Türkye karakteri modunda   19.05.2025 10:42:57
+document.write(zaman.toLocaleString("tr-TR",{dateStyle:"full"})+"</br>");//		19 Mayıs 2025 Pazar
+document.write(zaman.toLocaleString("tr-TR",{dateStyle:"long"})+"</br>");//		19 Mayıs 2024
+document.write(zaman.toLocaleString("tr-TR",{dateStyle:"medium"})+"</br>");//		19 May 2024
+</script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!doctype>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="content-type" content="text/html;charset=Utf-8"/>
+<title>Js Dersleri</title>
+
+
+
+</head>
+<body>
+<script type="text/javascript" language="javascript">
+var Arabalar=["Fiat","Audi","Skoda","Volvo","Seat",["Opel","Togg","VW"],"Peougeot","Bmw"];
+
+document.write(Arabalar+"</br>");
+document.write(Arabalar[2]+"</br>");
+
+document.write(Arabalar[3]+"</br>");
+
+document.write(Arabalar[6]+"</br>");
+
+document.write(Arabalar[5][2]+"</br>");
+
+document.write(Arabalar[1]+"</br>");
+
+document.write(Arabalar[4]+"</br>");
+
+document.write(Arabalar[0]+"</br>");
+
+
+
+document.write(Arabalar[5].length+"</br>")
+document.write(Arabalar.at(6)+"</br>");  //Arabalar[6] ile aynı tek avantajı negatig değer ile sondan sayıp getirir
+document.write(Arabalar.at(-6));//sondan 1 ile başlar unutma!
+document.write(Arabalar.with(2,"Mercedes")+"</br>");//with metodu aldığı birinci parametredeki değerde bulunan değişkenin yerine ikinci parametredeki değişkeni copypaste eder
+delete(Arabalar[2]);//dizinin ikinci sırasındaki Mercedesi silelim ama o dizini boş yapmış
+document.write(Arabalar+"</br>");
+document.write(Arabalar[2])
+console.log(Arabalar)//console mutlaka bak,empty olduğu görürsün
+Arabalar.pop();//son elemandaki Bmw yi de tamamen ortadan kaldırıyoruz
+console.log(Arabalar);
+Arabalar.shift();//ilk elemandaki Fiat tamamen ortadan kaldırıyoruz
+console.log(Arabalar);
+Arabalar.push("Bmw");//Son elemana Bmv yi koy
+console.log(Arabalar);
+console.log(Arabalar.length)//Dizi eleman sayısı
+Arabalar.unshift("Fiat");//Fiatı başa koy
+console.log(Arabalar);
+var Meyveler=new Array("Elma","Armut",["Domates"],["Ceniz",["Üzüm","Şeker"],"Fındık"],"kayısı");
+document.write(Meyveler+"</br>");
+
+document.write(Meyveler.flat(1)+	"</br>");//tek dizi haline getir.
+document.write(Meyveler.splice(1,2)+"</br>");//dizide 1 ve 2. indextekileri sil 
+document.write(Meyveler+"</br>");
+document.write(Meyveler.splice(1,2,"Erik","Şeftali"+"</br>"));//1 ve 2 kaldır ve sona erik şefteli yerleştir
+document.write(Meyveler+"</br>");
+
+var C=[1,2,3,4,5,6,7,8,9,0];
+var c1=C.slice(4,7);// 4 ve 7 dizinler arası copy yeni dizi oluştur paste
+document.write(C+"</br>");
+document.write(c1+"</br>");
+document.write(C.copyWithin(4,1,3));//4.indexin önüne 1. ve 3. index elemanları üzerine yaz
+document.write(C.copyWithin(4,0));//4.indexin önüne 0dan üerine yaz eleman sayısı kadar index elemanları üzerine yaz
+document.write(C+"</br>");
+document.write(C.fill(13,8)+"</br >");
+e1=["Ali","Ayşe","Fatma","Osman","Hatice"];
+document.write(e1.join(" ile ")+"</br>");//Ali ile Ayşe ile Fatma ile Osman ile Hatice
+document.write(e1.indexOf("Ayşe")+"</br>");//Ayşe sıralamada 3. sırada
+document.write(e1.lastIndexOf("Ayşe")+"</br>");//Ayşe sıralamada 3. sırada
+
+function orn(deger,index,referans)
+{
+return deger<27//25 ten küçük 
+}
+
+var r1=[3,5,8,10,28,24,34,48,55,71,83,88,100];
+document.write(r1+"</br>");
+document.write(r1.find(orn)+"</br>");
+document.write(r1.findLastIndex(orn)+"</br>");
+document.write(r1.reverse()+"</br>");//100,88,83,71,55,48,34,24,28,10,8,5,3
+document.write(r1.sort()+"</br>");//100,88,83,71,55,48,34,24,28,10,8,5,3
+document.write(r1.toSorted()+"</br>");//100,88,83,71,55,48,34,24,28,10,8,5,3
+function orn1(deger,index,referans)
+{
+sonuc+=deger*deger+"</br>";
+}
+var sonuc="";
+r1.forEach(orn1);
+
+document.write(sonuc+"</br>");
+
+</script>
+</body>
+</html>
