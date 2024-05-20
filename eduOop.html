@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<title>Extra Edu</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript">
+
+var n1={Adi:"Akif",Soyadi:"Akdeniz",Boyu:175, a:5*7, c:function b() {return 40}};
+document.write(n1.Adi+"</br>");
+document.write(n1.Soyadi+"</br>");
+document.write(n1.a+"</br>");
+document.write(n1.c()+"</br>");
+document.write(typeof(n1)+"</br>");
+document.write(n1.c()+"</br>");//c is not defined dedi çünkü bu değişken yada fonksiyon n1 kümesine ait
+document.write(n1["Adi"]+"</br>");
+n1.yas=45;
+document.write(n1.yas+"</br>");
+var d1=n1.yas+45;
+document.write(d1+"</br>");
+
+var n2={Adi:"Gümüş",Soyadi:"Erdem",Boyu:175, c:function b() {var icerik=this.Adi+" "+this.Soyadi+" this li </br> "+n1.Adi+" "+n1.Soyadi+" harici nesneden getirdim"+"</br>"+n2.Adi+""+n2.Soyadi; return icerik }};
+document.write(n2.c()+"</br>");
+
+var n3={isim:"Seyit",
+        Soyisim:"Akdeniz",
+        Bilgi: function (){this.yas=45; this.ulke="Turkiye";}
+        }
+
+document.write(n3.isim+"</br>");
+document.write(n3.Soyisim+"</br>");
+//n3.Bilgi();
+document.write(n3.yas+"</br>");
+document.write(n3.ulke+"</br>");
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
