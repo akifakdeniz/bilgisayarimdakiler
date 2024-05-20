@@ -1,0 +1,93 @@
+<!doctype html>
+<title>JsEdu</title>
+<head>
+<meta http-equiv="content-type" content="text/html; charset="utf-8">
+</head>
+
+
+<body>
+<script type="text/javascript" language="javascript">
+var n1={
+		adi:"Seyit",
+		soyadi:"Akdeniz",
+		kitap:{
+			birincikitap:"HTML",
+			ikincikitap:"CSS",
+			ucuncukitap:"Java"
+				}
+
+}
+kitap=n1.kitap.birincikitap;
+document.write(n1.adi+"</br>");
+document.write(kitap+"</br>");
+document.write(n1.kitap.ucuncukitap+"</br>");
+
+/*-----------------------------------------------------------------------*/
+var n2=[{A:"audi",B:"beudi",C:"ceudi"},{A:"Ferari",B:"Berari",c:"Cerari"}]
+document.write(n2[1].B+"</br>");
+
+/*-----------------------------------------------------------------------*/
+var n3=new Object();
+n3.isim="Eren Kağan";
+document.write(n3.isim+"</br>");
+/*-----------------------------------------------------------------------*/
+
+var n4=new Object();
+n4["İsim"]="Gümüş";
+
+document.write(n4.İsim+"</br>");
+/*-----------------------------------------------------------------------*/
+
+var n5=new Object(); //new Objcet ile nesne yarattım
+
+n5.bilgi=function b(x,y) {return Math.pow(x,y);} // nesne fonksiyon ekledim
+
+document.write(n5.bilgi(2,7)+"</br>");
+/*-----------------------------------------------------------------------*/
+n6=new Object();
+
+n6.adi="Akif";
+n6.soyadi="Akdeniz";
+n6.metot=function(yas,ulke="turkiye") {return n6.adi+" "+n6.soyadi+" "+yas+" "+ulke};
+document.write(n6.metot(45)+"</br>");
+/*-----------------------------------------------------------------------*/
+n7=new Object();  //n7 nesnesi
+
+n7.adi="Abdurrahman";
+n7.soyadi="Akdeniz";
+n7.kitap=new Object(); //n7 nesnesinin içinde kitap nesnesi
+n7.kitap.birincikitap="Vadideki zambak";
+n7.kitap.ikincikitap="Ölü Ozanlar Derneği";
+
+document.write(n7.kitap.birincikitap+"</br>");
+document.write(n7.adi+" "+n7.soyadi+" isimli kişi "+n7.kitap.birincikitap+" okuduktan sonra "+n7.kitap.ikincikitap+" okuyarak vakit geçirmişti.</br>" );
+/*-----------------------------------------------------------------------*/
+
+function ornek()
+{
+this.isim="Erdem Kayra";
+this.soyisim="Akdeniz";
+}
+
+var personel=new ornek();
+document.write(personel.isim+"</br>");
+/*-----------------------------------------------------------------------*/
+
+class Sınıf{
+constructor()
+{
+document.write("Konsrsaktırlı başlangıç otomatik devreye alma"+"</br>");
+}
+}
+new Sınıf();//sınıf ı çağırdığında içinde otomatik çalışan yapı var
+/*-----------------------------------------------------------------------*/
+class Sınıfa{
+constructor(){
+this.kisi="Seyit Akif Akdeniz";
+}
+}
+var obje=new Sınıfa();
+document.write(obje.kisi)
+</script>
+</body>
+</html>
