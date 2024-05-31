@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+<title>JsEdu</title>
+
+</head>
+<body>
+<script type="text/javascript" language="javascript">
+var a="Akif";
+var b=5;
+var c=NaN;
+var d=12;
+var e=Number.MAX_VALUE*b;
+var sonuc=a+b;
+var g=23.125241352346;
+document.write(Number.MAX_VALUE+"</br>");  //Number sınıf MAX_VALUE özellik atanabilecek en büyük sayı
+document.write(Number.MIN_VALUE+"</br>"); //Number sınıfında MİN_VALUE atanabilecek en küçük sayı
+document.write(Number.POSITIVE_INFINITY+"</br>") //Number sınıfında atanabilecek en büyük positif sayı
+document.write(Number.NEGATIVE_INFINITY+"</br>") //Number sınıfında atanabilecek en küçük positif sayı
+document.write(Math.E+"</br>");  //Math sınıfında E euler sabir sayısı
+document.write(sonuc+"</br>"); //Nan olarak geri döner, çünkü sayi ile string toplanmaz
+document.write(Math.LN2+"</br>"); //ileri seviye matematik işlemleri 2 sayısının doğal logaritma değeri
+document.write(Math.LN10+"</br>"); //ileri seviye matematik işlemleri 10 sayısının doğal logaritma değeri
+document.write(Math.LOG10E+"</br>"); //ileri seviye matematik işlemleri EULER sayının 10 tabanına göre logaritma değeri
+document.write(Math.LOG2E+"</br>"); //ileri seviye matematik işlemleri EULER sayının 2 tabanına göre logaritma değeri
+document.write(Math.PI+"</br>"); //ileri seviye matematik pi sabiti
+document.write(Math.SQRT2+"</br>"); //ileri seviye matematik işlemleri 2 karekökü
+document.write(Math.SQRT1_2+"</br>"); //ileri seviye matematik işlemleri 1/2 karekökü
+document.write(Number.isNaN(a)+"</br>"); //değişkene değer atadın mı demiştim öyle değilmiş ,değer NaN mıtrue/false
+document.write(Number.isNaN(c)+"</br>"); //değişkene değer atadın mı demiştim öyle değilmiş ,değer NaN mı true/false
+document.write(isNaN(c)+"</br>"); //Number i kaldırdım,değişkene değer atadın mı demiştim öyle değilmiş ,değer NaN mı true/false
+document.write(Number.isFinite(c)+"</br>"); //değişkene değer atadın mı demiştim öyle değilmiş ,değer NaN mı true/false
+document.write(Number.isNaN(c)+"</br>"); //değişkene değer atadın mı demiştim öyle değilmiş ,değer NaN mı true/false
+document.write(Number.isFinite(e)+"</br>"); // sonlu bir sayı mı /sonsuz olacağı için false döner
+document.write(b+" sayısı "+Number.isInteger(b)+" yani tam sayı </br>"); //isInteger yani tam sayı mı
+document.write(a+" ifadesi "+Number.isInteger(a)+" yani tam sayı değil </br>"); //isInteger yani tam sayı mı
+document.write(g.toFixed(3)+"</br>"); // virgülden sonra kaç basamak istersin
+
+
+
+
+
+
+</script>
+</body>
+
+
+
+</html>
