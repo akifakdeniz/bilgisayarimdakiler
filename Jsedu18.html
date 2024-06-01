@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<head>
+<title>JsEdu</title>
+
+</head>
+<body>
+<script type="text/javascript" language="javascript">
+var a="Akif";
+var a1="10 numara";
+var a2=" 20 ";
+var a3="Fiyat 10";
+var a4=40;
+var b=5;
+var c=NaN;
+var d=12;
+var e=Number.MAX_VALUE*b;
+var sonuc=a+b;
+var g=23.125241352346;
+document.write(Number.MAX_VALUE+"</br>");  //Number sınıf MAX_VALUE özellik atanabilecek en büyük sayı
+document.write(Number.MIN_VALUE+"</br>"); //Number sınıfında MİN_VALUE atanabilecek en küçük sayı
+document.write(Number.POSITIVE_INFINITY+"</br>") //Number sınıfında atanabilecek en büyük positif sayı
+document.write(Number.NEGATIVE_INFINITY+"</br>") //Number sınıfında atanabilecek en küçük positif sayı
+document.write(Math.E+"</br>");  //Math sınıfında E euler sabir sayısı
+document.write(sonuc+"</br>"); //Nan olarak geri döner, çünkü sayi ile string toplanmaz
+document.write(Math.LN2+"</br>"); //ileri seviye matematik işlemleri 2 sayısının doğal logaritma değeri
+document.write(Math.LN10+"</br>"); //ileri seviye matematik işlemleri 10 sayısının doğal logaritma değeri
+document.write(Math.LOG10E+"</br>"); //ileri seviye matematik işlemleri EULER sayının 10 tabanına göre logaritma değeri
+document.write(Math.LOG2E+"</br>"); //ileri seviye matematik işlemleri EULER sayının 2 tabanına göre logaritma değeri
+document.write(Math.PI+"</br>"); //ileri seviye matematik pi sabiti
+document.write(Math.SQRT2+"</br>"); //ileri seviye matematik işlemleri 2 karekökü
+document.write(Math.SQRT1_2+"</br>"); //ileri seviye matematik işlemleri 1/2 karekökü
+document.write(Number.isNaN(a)+"</br>"); //değişkene değer atadın mı demiştim öyle değilmiş ,değer NaN mıtrue/false
+document.write(Number.isNaN(c)+"</br>"); //değişkene değer atadın mı demiştim öyle değilmiş ,değer NaN mı true/false
+document.write(isNaN(c)+"</br>"); //Number i kaldırdım,değişkene değer atadın mı demiştim öyle değilmiş ,değer NaN mı true/false
+document.write(Number.isFinite(c)+"</br>"); //değişkene değer atadın mı demiştim öyle değilmiş ,değer NaN mı true/false
+document.write(Number.isNaN(c)+"</br>"); //değişkene değer atadın mı demiştim öyle değilmiş ,değer NaN mı true/false
+document.write(Number.isFinite(e)+"</br>"); // sonlu bir sayı mı /sonsuz olacağı için false döner
+document.write(b+" sayısı "+Number.isInteger(b)+" yani tam sayı </br>"); //isInteger yani tam sayı mı
+document.write(a+" ifadesi "+Number.isInteger(a)+" yani tam sayı değil </br>"); //isInteger yani tam sayı mı
+document.write(g.toFixed(3)+"</br>"); // virgülden sonra kaç basamak istersin
+document.write(g.toPrecision(7)+"</br>"); //virgül dahil kaç basamak
+document.write(d.toPrecision(7)+"</br>"); //tam sayıya bile virgül sonrasını da ilave 0 lar ekliyor
+document.write(g.toExponential(4)+"</br>");//virgülden sonraki 4 basamağı üstel yani devirli yapıyor
+document.write(parseInt(g)+"</br>");  //kendisine parametre olarak verilen değerler doğrultusunda içeriği tam sayı haline getirir.
+document.write("--------------------------------parseInt metodolojisi----------------------------------"+"</br></br>");
+document.write("Verilen değer: "+a+"   ");
+document.write("---> Döndüğü sonuç: "+parseInt(a)+"</br>") //kendisine parametre olarak verilen değerler doğrultusunda içeriği tam sayı haline getirir.
+document.write("Verilen değer: "+a1+"   ");
+document.write("---> Döndüğü sonuç: "+parseInt(a1)+"</br>")
+document.write("Verilen değer: "+a2+"   ");
+document.write("---> Döndüğü sonuç: "+parseInt(a2)+"</br>")
+document.write("Verilen değer: "+a3+"   ");
+document.write("---> Döndüğü sonuç: "+parseInt(a3)+"</br>")
+document.write("Verilen değer: "+a4+"   ");
+document.write("---> Döndüğü sonuç: "+parseInt(a4)+"</br>")
+document.write("Verilen değer: "+g+"   ");
+document.write("---> Döndüğü sonuç: "+parseInt(g)+"</br>")
+document.write("Verilen değer: "+sonuc+"   ");
+document.write("---> Döndüğü sonuç: "+parseInt(sonuc)+"</br></br>")
+document.write("--------------------------------parseFloat metodolojisi----------------------------------"+"</br></br>");
+
+document.write("Verilen değer: "+a+"   ");
+document.write("---> Döndüğü sonuç: "+parseFloat(a)+"</br>") //kendisine parametre olarak verilen değerler doğrultusunda içeriği  haline getirir.
+document.write("Verilen değer: "+a1+"   ");
+document.write("---> Döndüğü sonuç: "+parseFloat(a1)+"</br>")
+document.write("Verilen değer: "+a2+"   ");
+document.write("---> Döndüğü sonuç: "+parseFloat(a2)+"</br>")
+document.write("Verilen değer: "+a3+"   ");
+document.write("---> Döndüğü sonuç: "+parseFloat(a3)+"</br>")
+document.write("Verilen değer: "+a4+"   ");
+document.write("---> Döndüğü sonuç: "+parseFloat(a4)+"</br>")
+document.write("Verilen değer: "+g+"   ");
+document.write("---> Döndüğü sonuç: "+parseFloat(g)+"</br>")
+document.write("Verilen değer: "+sonuc+"   ");
+document.write("---> Döndüğü sonuç: "+parseFloat(sonuc)+"</br></br>")
+
+document.write("--------------------------------toString metodolojisi----------------------------------"+"</br></br>");
+
+document.write("Verilen değer: "+a+"   ");
+document.write("---> Döndüğü sonuç: "+a.toString()+" ---> Veri türü:"+ typeof (a)+"</br>") //kendisine parametre olarak verilen değerler doğrultusunda içeriği metin haline getirir.
+document.write("Verilen değer: "+a1+"   ");
+document.write("---> Döndüğü sonuç: "+a1.toString()+" ---> Veri türü:"+ typeof (a1)+"</br>")
+document.write("Verilen değer: "+a2+"   ");
+document.write("---> Döndüğü sonuç: "+a2.toString()+" ---> Veri türü:"+ typeof (a2)+"</br>")
+document.write("Verilen değer: "+a3+"   ");
+document.write("---> Döndüğü sonuç: "+a3.toString()+" ---> Veri türü:"+ typeof (a3)+"</br>")
+document.write("Verilen değer: "+a4+"   ");
+document.write("---> Döndüğü sonuç: "+a4.toString()+" ---> Veri türü:"+ typeof (a4)+"</br>")
+document.write("Verilen değer: "+g+"   ");
+document.write("---> Döndüğü sonuç: "+g.toString()+" ---> Veri türü:"+ typeof (g)+"</br>")
+document.write("Verilen değer: "+sonuc+"   ");
+document.write("---> Döndüğü sonuç: "+sonuc.toString()+" ---> Veri türü:"+ typeof (sonuc)+"</br></br>");
+
+
+document.write("--------------------------------ValueOf() metodolojisi----------------------------------"+"</br></br>");
+
+document.write("Verilen değer: "+a+"   ");
+document.write("---> Döndüğü sonuç: "+a.valueOf()+" ---> Veri türü:"+ typeof (a)+"</br>") //kendisine parametre olarak verilen değerler doğrultusunda içeriğiaynen aktarır
+document.write("---> Döndüğü sonuç: "+a1.valueOf()+" ---> Veri türü:"+ typeof (a1)+"</br>") //kendisine parametre olarak verilen değerler doğrultusunda içeriğiaynen aktarır
+document.write("---> Döndüğü sonuç: "+a2.valueOf()+" ---> Veri türü:"+ typeof (a2)+"</br>") //kendisine parametre olarak verilen değerler doğrultusunda içeriğiaynen aktarır
+document.write("---> Döndüğü sonuç: "+a3.valueOf()+" ---> Veri türü:"+ typeof (a3)+"</br>") //kendisine parametre olarak verilen değerler doğrultusunda içeriğiaynen aktarır
+document.write("---> Döndüğü sonuç: "+a4.valueOf()+" ---> Veri türü:"+ typeof (a4)+"</br>") //kendisine parametre olarak verilen değerler doğrultusunda içeriğiaynen aktarır
+document.write("---> Döndüğü sonuç: "+g.valueOf()+" ---> Veri türü:"+ typeof (g)+"</br>") //kendisine parametre olarak verilen değerler doğrultusunda içeriğiaynen aktarır
+document.write("---> Döndüğü sonuç: "+sonuc.valueOf()+" ---> Veri türü:"+ typeof (sonuc)+"</br></br>") //kendisine parametre olarak verilen değerler doğrultusunda içeriğiaynen aktarır
+
+document.write("--------------------------------Math. ile birlikte() metodolojisi----------------------------------"+"</br></br>");
+document.write("23.125241352346 ifadesi Math.ceil(degisken) metodu ile yukarı yuvarlar---> Döndüğü sonuç: "+Math.ceil(g)+"</br>") //ceil yukarı yuvarla
+document.write("23.125241352346 ifadesi Math.floor(degisken) metodu ile aşşağı yuvarlar---> Döndüğü sonuç: "+Math.floor(g)+"</br>") //floor aşağı yuvarla
+document.write("23.125241352346 ifadesi Math.round(degisken) metodu ile kendisine en yakın tam sayıyıkontol ederek yuvarlar---> Döndüğü sonuç: "+Math.round(g)+"</br>") //durma göre yuvarlar
+document.write("23.125241352346 ifadesi Math.trunc(degisken) metodu ile ondalık kısmını yani virgül sonrasını kaldırır---> Döndüğü sonuç: "+Math.trunc(g)+"</br></br>") //virgül sonrası yok
+
+
+document.write("--------------------------------Random metodolojisi-: 0 ile 1 arasında rastgele sayı üreterek---------------------------------"+"</br></br>");
+document.write("Math.random() metodunu direk yazdırıyorum---> Döndüğü sonuç: "+Math.random()+"</br>") //random 
+
+document.write("Math.random() metodunu 10 ile çarpıyorum Math.ceil() ile yukarı yuvarlıyorum---> Döndüğü sonuç: "+Math.ceil(Math.random()*10)+"</br>") //
+document.write("Math.random() metodunu 10 ile çarpıyorum Math.floor() ile aşağı yuvarlıyorum---> Döndüğü sonuç: "+Math.floor(Math.random()*10)+"</br>") //
+document.write("Math.random() metodunu 10 ile çarpıyorum Math.ceil() ile mantıksal yuvarlıyorum---> Döndüğü sonuç: "+Math.round(Math.random()*10)+"</br>") //
+document.write("Math.random() metodunu 10 ile çarpıyorum Math.ceil() ile virgülü kaldırıyorum---> Döndüğü sonuç: "+Math.trunc(Math.random()*10)+"</br></br>") //
+
+
+document.write("--------------------------------Math.min(),Math.max(),Math.pow(),Math.abs()---------------------------------"+"</br></br>");
+a6=[3,5,8,12,43,567];//dizide işe yaramadı
+document.write(Math.min(3,6,8,90)+"</br>"); //küçük değeri bulup yazar
+document.write(Math.max(3,6,8,90)+"</br>"); //büyük değeri bulup yazar
+document.write(Math.pow(3,4)+"</br>"); //üssünü alır değeri bulup yazar
+document.write(Math.abs(-25)+"</br>"); //mutlak değer değeri bulup yazar
+document.write(Math.sqrt(Math.abs(-25))+"</br>"); //karekök değeri bulup yazar
+document.write(Math.cbrt(-27)+"</br>"); //küpkök değeri bulup yazar
+document.write(Math.cbrt(512)+"</br>"); //küpkök değeri bulup yazar
+document.write(Math.sin(-1)+"</br>"); //sinüs değeri bulup yazar
+document.write(Math.sinh(-1)+"</br>"); //hiperbolik sinüs değeri bulup yazar
+document.write(Math.cos(-1)+"</br>"); //cosinüs değeri bulup yazar
+document.write(Math.tan(-1)+"</br>"); //tanjant değeri bulup yazar
+
+
+
+</script>
+</body>
+
+
+
+</html>

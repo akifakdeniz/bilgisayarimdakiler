@@ -1,0 +1,94 @@
+<!doctype>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="content-type" content="text/html;charset=Utf-8"/>
+<title>Js Dersleri</title>
+
+
+
+</head>
+<body>
+<script type="text/javascript" language="javascript">
+/*DÜzenli ifade tanıtma metotları
+1. Metot değişken= new RegExp("Desen");
+1. Metot değişken= new RegExp("Desen","Ayar"); ya da
+
+2. Metot değişken= /desen/; 
+2. Metot değişken= /desen/ayar; 
+
+şeklinde değişken tanımlıyoruz
+ */
+document.write("</br>----------------------------Regular Expression tanımlama RexExp('ifade',' özellik') veya /' ifade '/ özellik------------------------------------</br>")
+var ifade="Merhaba Akif nasılsın Akif?"; //bir string ifade oluşturdum
+var b=new RegExp("akif"); //regular expression (düzenli ifade) nesnesinde akif stringi değişken yaptım 
+var c=new RegExp("Akif"); //regular expression (düzenli ifade) nesnesinde akif stringi değişken yaptım 
+var d=/nasıl/
+var e=new RegExp("Akif","g"); //regular expression (düzenli ifade) nesnesinde akif stringi değişken yaptım 
+
+
+document.write("</br> Ya new RegExp(akif) olarak ya da /akif/ olarak tanımlanır</br>");
+
+document.write("</br>----------------------------Regular Expression match() kıyaslama metodu------------------------------------</br>")
+document.write("</br> İfacemizin içinde akif ifadesi var mı varsa yazar,yoksa null der -----> "+ifade.match(b)+"</br>");
+var sonuc= ifade.match(d);//a stringinde, b değişkeni yani akif ifadesini eşleştir varsa yaz yoksa null de  
+document.write("a.match(c) yani Merhaba Akif nasılsın Akif ? metininde nasıl ifadesini kıyaslayıp varsa yazdı sonuc ise -----> "+sonuc+"</br>");
+
+document.write("</br>----------------------------Regular Expression match() kıyaslama metodu------------------------------------</br>")
+
+var ifade1="Sen! her zaman ve her yerde lazım olan süreklilik"; //bir string ifade oluşturdum
+document.write(ifade1+"</br>");
+document.write(ifade1.match(new RegExp("her","g"))+"</br>");
+document.write(ifade1.match(/her/g));
+
+document.write("</br>----------------------------Regular Expression global() kıyaslama metodu içide g ayarı kullanıldımı onu kontrol eden------------------------------------</br>")
+
+var ifade2="Ben gemi olurum sen kaptan ol"; //bir string ifade oluşturdum
+document.write(ifade2+"</br>");
+
+
+var varmı=/sen/g ;
+document.write(varmı.global+"</br>"); //g li sen ifadsi var mı
+
+document.write("</br>----------------------------Regular Expression i ayarı ------------------------------------</br>")
+
+var ifade3="Sinema,hem reklam ortamı olarak HEM de avantajlara sahiptir. "; //bir string ifade oluşturdum
+document.write(ifade3+"</br>");
+document.write(ifade3.match(/ORTamı/i)+"</br>")
+document.write(ifade3.match(/ORTamı/gi)+"</br>")
+document.write(ifade3.match(/hem/i)+"</br>")
+document.write(ifade3.match(/hem/gi)+"</br>")
+
+
+document.write("</br>----------------------------Regular Expression m ayarı ------------------------------------</br>")
+
+var ifade4="Son günlerde bir kez daha okudum Don Kişot’u.</br>Bu kez bir başka yönü, yazma, yaratma eylemine  dönük söylenenler ilgimi çekti."; //bir string ifade oluşturdum
+document.write(ifade4+"</br>");
+document.write(ifade4.match(/kez/i)+"</br>");
+document.write(ifade4.match(/OKUDUM/gi)+"</br>");
+document.write(ifade4.match(/dönük/)+"</br>");
+document.write(ifade4.match(/hem/gi)+"</br>");
+
+
+document.write("</br>----------------------------Regular Expression test() metodu ------------------------------------</br>")
+
+var ifade5="Bu durum gerek eğitimde,gerekse aile hayatında, yetişkinlerin, genç kuşaklara bilgi ve becerilerini aktardığı geleneksel yapıyı da etkilemektedir."; //bir string ifade oluşturdum
+document.write(ifade5+"</br>");
+document.write(/eğitimde/.test(ifade5)+"</br>");
+
+
+document.write("</br>----------------------------Regular Expression source() metodu ------------------------------------</br>")
+
+var ifade6="Akıllı telefonlar, iPad’ler ya da tablet bilgisayarlarla çocuk yaşlarda tanıştıkları için çoğu, bu teknolojileri hayatlarının ayrılmaz bir parçası olarak görmektedir. "; //bir string ifade oluşturdum
+document.write(ifade5+"</br>");
+document.write(/çocuk/.source+"</br>");
+
+
+document.write("</br>----------------------------Regular Expression search() metodu ------------------------------------</br>")
+
+var ifade7="Modern tıp bugün geldiği noktada ömürlerimizi uzatmak, bulaşıcı hastalıkları engellemek ve yaşam kalitemizi yükseltmek adına ciddi bir mesafe almış durumda. "; //bir string ifade oluşturdum
+document.write(ifade7+"</br>");
+document.write(ifade7.search(/bulaşıcı/)+"</br>");
+
+</script>
+</body>
+</html>
